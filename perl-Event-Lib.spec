@@ -15,7 +15,6 @@ BuildRequires: perl-devel
 BuildRequires: libevent-devel
 
 %description
-
 This module is a Perl wrapper around libevent(3) as available from the
 http://www.monkey.org/~provos/libevent/ manpage. It allows to execute a
 function whenever a given event on a filehandle happens, a timeout occurs
