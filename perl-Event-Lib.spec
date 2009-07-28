@@ -1,16 +1,16 @@
 %define realname   Event-Lib
-%define version    1.03
-%define release    %mkrel 2
+%define upstream_version    1.03
+%define release    %mkrel 1
 
 Name:       perl-%{realname}
-Version:    %{version}
+Version:    %perl_convert_version %upstream_version
 Release:    %{release}
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Perl extentions for event-based programming
-Source:     http://www.cpan.org/modules/by-module/Event/%{realname}-%{version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Event/%{realname}-%{upstream_version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:  %{_tmppath}/%{name}-%{upstream_version}-%{release}-buildroot
 BuildRequires: perl-devel
 BuildRequires: libevent-devel
 
@@ -31,7 +31,7 @@ should have a look at the "EXAMPLE: A SIMPLE TCP SERVER" manpage to get a
 feeling about how it all fits together.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
