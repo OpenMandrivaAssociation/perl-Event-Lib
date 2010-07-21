@@ -38,7 +38,11 @@ feeling about how it all fits together.
 %make
 
 %check
-make test
+# those tests fail with test::harness 3.x
+# cf  https://rt.cpan.org/Ticket/Display.html?id=35355
+# and http://rt.cpan.org/Public/Bug/Display.html?id=36130
+rm t/20_signal.t t/51_cleanup_persistent.t
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
