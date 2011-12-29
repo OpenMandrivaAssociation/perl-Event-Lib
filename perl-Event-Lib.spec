@@ -1,6 +1,6 @@
 %define realname   Event-Lib
 %define upstream_version    1.03
-%define release    %mkrel 2
+%define release    %mkrel 3
 
 Name:       perl-%{realname}
 Version:    %perl_convert_version %upstream_version
