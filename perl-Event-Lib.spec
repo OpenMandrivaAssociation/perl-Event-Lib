@@ -59,3 +59,36 @@ rm -rf $RPM_BUILD_ROOT
 
 
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.30.0-4mdv2012.0
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Thu Dec 29 2011 Götz Waschk <waschk@mandriva.org> 1.30.0-3
++ Revision: 748202
+- rebuild
+
+* Wed Dec 22 2010 Oden Eriksson <oeriksson@mandriva.com> 1.30.0-2mdv2011.0
++ Revision: 623877
+- rebuilt against libevent 2.x
+
+* Wed Jul 21 2010 Jérôme Quelin <jquelin@mandriva.org> 1.30.0-1mdv2011.0
++ Revision: 556555
+- remove faulty tests failing with test::harness 3.x
+
+* Tue Jul 28 2009 Götz Waschk <waschk@mandriva.org> 1.30.0-1mdv2010.0
++ Revision: 401504
+- use perl version macro
+
+* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 1.03-2mdv2009.0
++ Revision: 268480
+- rebuild early 2009.0 package (before pixel changes)
+- fix extra spacing at top of description
+
+* Wed May 28 2008 Götz Waschk <waschk@mandriva.org> 1.03-1mdv2009.0
++ Revision: 212550
+- import perl-Event-Lib
+
+
