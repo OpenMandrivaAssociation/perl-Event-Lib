@@ -4,7 +4,7 @@
 Summary:	Perl extentions for event-based programming
 Name:		perl-%{realname}
 Version:	%perl_convert_version %upstream_version
-Release:	6
+Release:	7
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{realname}
